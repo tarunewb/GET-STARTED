@@ -34,17 +34,4 @@ if($email==""){
  } else{ 
    echo "registration Successful";
  }
-//  $password = $_POST["pwd"];
-//  if ($password == "") {
-//      echo "Enter the password<br>";
-//  } else {
-//      echo "$password<br>";
-//  }
-//  exit;
- 
-//  $cpass=$_POST["cpwd"];
-//  if ($password != $cpass) {
-//    echo("Error... Passwords do not match");
-//    exit;
-//    } 
 ?>
