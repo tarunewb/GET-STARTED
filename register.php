@@ -33,7 +33,7 @@ echo "Error.... Password does not match<br>";
 else{
 
 $file = file_get_contents("../database/user.json");
-$array_data=json_decode($file,true);
+$decode=json_decode($file,true);
 $data=array(
 "name"=>$name,
 "last name"=>$Name,
@@ -43,8 +43,8 @@ $data=array(
  
 
 
-$array_data[]=$data;
-$encod=json_encode($array_data,true);
+$decode[]=$data;
+$encod=json_encode($decode,true);
 if(file_put_contents("../database/user.json",$encod)){
 echo "Registration Successfull";
 echo '<br>';
